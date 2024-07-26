@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="50dp"
+    app:circularflow_radiusInDP="100dp"
+    android:background="#2C3E50">
+
+    <ImageView
+        android:id="@+id/task_img"
+        android:layout_width="81dp"
+        android:layout_height="76dp"
+        android:background="#2C3E50"
+        android:src="@drawable/task_foreground"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+
+        android:layout_toRightOf="@id/task_img"
+        android:layout_marginStart="20dp"
+        android:textColor="#ECF0F1"
+        android:textSize="30sp"
+        android:text="Name"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/karmaPoints"
+        android:layout_marginRight="10dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_toRightOf="@id/name"
+        android:textColor="#ECF0F1"
+        android:text="KarmaPoints"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_toRightOf="@id/task_img"
+        android:layout_below="@id/name"
+        android:layout_marginEnd="5dp"
+        android:text="dlksfjlsdfjlsdfk"
+        android:textColor="#BDC3C7"
+        android:textSize="15sp" />
+
+    <android.widget.ImageButton
+        android:id="@+id/reserve_btn"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginLeft="350dp"
+        android:contentDescription="@string/appbar_scrolling_view_behavior"
+        android:src="@drawable/add_task_foreground"
+        android:text="Reserve"
+        android:textColor="@color/white"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description"
+        android:layout_marginEnd="2dp"
+        android:outlineProvider="paddedBounds"/>
+
+
+</RelativeLayout>

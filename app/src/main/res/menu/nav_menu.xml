@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+  tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:title="Home"
+            android:id="@+id/home"
+            android:icon="@drawable/home_foreground"
+            />
+    <item
+        android:title="View Tasks"
+        android:id="@+id/tasks"
+        android:icon="@drawable/task_foreground"
+        />
+    <item
+        android:title="Karma Transactions"
+        android:id="@+id/karma"
+        android:icon="@drawable/transactions_foreground"
+        />
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:title="Logout"
+            android:id="@+id/logout"
+            android:icon="@drawable/logout_foreground"
+            />
+    </group>
+
+</menu>
